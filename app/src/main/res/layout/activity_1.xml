@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/pngback">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="255dp"
+        android:src="@drawable/pngkeycomtictactoe">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+       >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1"
+            android:hint="PLAYER 1"
+            android:textStyle="bold"
+           android:textColorHint="#9D9A9A"
+            android:textColor="#E15757"
+            android:layout_marginLeft="68dp"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2"
+            android:hint="PLAYER 2"
+            android:textStyle="bold"
+            android:textColor="#2191CD"
+            android:textColorHint="#9D9A9A"
+            android:layout_marginLeft="60dp"
+            android:textSize="20sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="60dp"
+        android:text="START"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:backgroundTint="#626362">
+
+    </Button>
+
+</LinearLayout>

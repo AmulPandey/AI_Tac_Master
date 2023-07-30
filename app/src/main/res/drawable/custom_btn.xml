@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+
+          <solid android:color="@color/ic_launcher_background"/>
+            <size android:width="100dp"
+                android:height="100dp">
+
+            </size>
+
+            <corners android:topLeftRadius="45dp"
+                android:bottomRightRadius="45dp"/>
+            <gradient
+                android:endColor="#050505"
+                android:startColor="#EF0E0E"
+                android:type="linear"
+                android:centerColor="#644343"/>
+
+        </shape>
+
+    </item>
+
+</selector>
