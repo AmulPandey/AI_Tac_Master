@@ -1,26 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background"
-    android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
+
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/ic_newtic" />
+        android:layout_marginTop="36dp"
+        android:src="@drawable/gameplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/xWinCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="X Wins:  "
+            android:textColor="@color/white"
+            android:textColorHint="#9D9A9A"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/spcae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="               "
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/oWinCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Wins:  "
+            android:textColor="@color/white"
+            android:textColorHint="#9D9A9A"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
 
     <GridLayout
+        android:id="@+id/grid_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
         android:columnCount="3"
-        android:rowCount="3">
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout">
 
 
         <Button
@@ -32,6 +89,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -43,6 +101,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -54,6 +113,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -65,6 +125,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -76,6 +137,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -87,6 +149,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp" />
 
@@ -97,6 +160,7 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -108,22 +172,41 @@
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/custom_btn"
+            android:contentDescription="btn"
             android:onClick="check"
             android:textSize="40sp"
             android:textStyle="bold" />
 
     </GridLayout>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadinganim"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout"
+        app:layout_constraintVertical_bias="0.13"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_animation">
 
-</LinearLayout>
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

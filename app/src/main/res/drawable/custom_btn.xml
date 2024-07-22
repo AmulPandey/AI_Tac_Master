@@ -4,19 +4,24 @@
     <item>
         <shape android:shape="rectangle">
 
-          <solid android:color="@color/ic_launcher_background"/>
+          <solid android:color="@color/white"/>
             <size android:width="100dp"
-                android:height="100dp">
+                android:height="100dp"
+                >
 
             </size>
 
-            <corners android:topLeftRadius="45dp"
-                android:bottomRightRadius="45dp"/>
-            <gradient
-                android:endColor="#050505"
-                android:startColor="#EF0E0E"
-                android:type="linear"
-                android:centerColor="#644343"/>
+            <corners android:topLeftRadius="40dp"
+                android:bottomRightRadius="40dp"
+                android:topRightRadius="40dp"
+                android:bottomLeftRadius="40dp"/>
+<!--            <gradient-->
+<!--                android:endColor="#EFE8E8"-->
+<!--                android:startColor="#EFE9E9"-->
+<!--                android:type="radial"-->
+<!--                android:gradientRadius="100"-->
+<!--                android:centerColor="#F6F2F2"/>-->
+
 
         </shape>
 
