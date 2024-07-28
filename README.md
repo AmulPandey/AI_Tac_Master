@@ -1,4 +1,4 @@
-# **BMI Calculator Pro**
+# **AI Tac Master**
 
 AI Powered Tic-Tac-Toe is an Android application that allows users to play Tic-Tac-Toe against an AI opponent as well with other player. AI is designed to provide a challenging and enjoyable experience for players of all skill levels.
 
