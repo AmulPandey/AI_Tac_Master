@@ -23,6 +23,10 @@ AI Powered Tic-Tac-Toe is an Android application that allows users to play Tic-T
 <img alt="Overview"  src="https://github.com/AmulPandey/AI_Tac_Master/blob/main/app/src/main/assets/TicTacToeScreenshots.jpg">
 </p>
 
+
+## **Preview**  
+https://github.com/user-attachments/assets/aaa713da-ee79-44f4-91cb-58a491e802d7
+
 ## Contact
 
 * Author: Amul Pandey
